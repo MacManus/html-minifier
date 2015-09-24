@@ -379,11 +379,11 @@
   }
 
   function canCollapseWhitespace(tag) {
-    return !(/^(?:script|style|pre|textarea)$/.test(tag));
+    return !(/^(?:script|style|pre)$/.test(tag));
   }
 
   function canTrimWhitespace(tag) {
-    return !(/^(?:pre|textarea)$/.test(tag));
+    return !(/^(?:pre)$/.test(tag));
   }
 
   function attrsToMarkup(attrs) {
